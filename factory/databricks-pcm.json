@@ -1,0 +1,9 @@
+{
+	"name": "databricks-pcm",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c851f014-a38b-442f-a403-f14379899e4e",
+		"tenantId": "e75e4259-aae3-430b-bdb7-b135f0105495"
+	}
+}
