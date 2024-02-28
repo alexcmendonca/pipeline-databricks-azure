@@ -1,7 +1,7 @@
 # Databricks e Data Factory | Criando e orquestrando pipelines com Azure
 
 ## 💡Objetivos
-Desenvolver um pipeline de engenharia de dados, usando recursos da ferramenta de Cloud utilizada pela Microsoft Azure, agendando a execução dos notebooks no ambiente do Azure Databricks, utilizando ferramentas como PySpark, Airflow, Databricks e requisições de API. Incluindo, utilização do Data Factory e o Databricks com Python para ler e manipular os dados nas camadas bronze e silver de um Data Lake que será criado no Azure.
+Desenvolver um pipeline de engenharia de dados, usando recursos da ferramenta de Cloud utilizada pela Microsoft Azure, agendando a execução dos notebooks no ambiente do Azure Databricks, utilizando ferramentas como PySpark, Databricks e requisições de API. Incluindo, utilização do Data Factory e o Databricks com Python para ler e manipular os dados nas camadas bronze e silver de um Data Lake que será criado no Azure.
 
 ###### Imagem 1: Etapas do pipeline
 <img src="/img/etapas-pipeline.png">
