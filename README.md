@@ -15,7 +15,7 @@ Para execução de todas as etapas desse pipeline, foi utilizado o Trello para o
 Para configurar os recursos na Azure e estruturar nosso Data Lake para armazenar e organizar os dados, foi utilizada a tecnologia Data Lake Gen 2 da Azure. Inicialmente, configurando o registro de aplicativo e atribuindo permissões adequadas para gerenciar o acesso aos dados no Data Lake.
 
 ###### Imagem 3: Integrando Databricks com GitHub
-<img src="/img/img-playlist.png">
+<img src="/img/img-databricks-github.png">
 
 Em seguida, realizada configuração no Databricks para executar as transformações nos dados, aproveitando os recursos da Azure. Criação do workspace Databricks dentro da própria Azure, garantindo acesso à ferramenta e configurando-a conforme necessário. Conexão estabelecida entre o Databricks e o Data Lake para acesso e manipulação dos dados.
 
@@ -47,24 +47,32 @@ Realizado testes essenciais para garantir a execução correta do pipeline e ide
 | Depurar o pipeline | Criar um gatilho de execução |
 | Publicar e colocar o pipeline em produção | Deletar os recursos da Azure |
 
-##  🗂️Organização dos Arquivos
-* Notebooks Jupyter | Databricks
-    - Projeto Spotify  - Parte 1 até 3: Exploração e tratamento dos dados, seleção de dados, configuração do cluster, implementação do algoritmo Kmeans, cálculo de distâncias. Utilizando também a API do Spotify, chegamos à criação da playlist.
+##  🗂️Organização dos Arquivos Databricks e Data Factory
+* Notebooks | Databricks
+    - Transformações nos dados e salvando-os em um arquivo Delta Lake no repositório Azure Data Lake.
 
-    - Desafio Projeto Spotify - Manipulação e transformação eficientes de dados e arquivos utilizando o Apache Spark em conjunto com o formato Parquet. Incluíndo conversão de arquivos CSV para o formato Parquet, garantindo maior desempenho e eficiência no processamento e armazenamento dos dados.
+* Factory | Azure Data Factory
+    - Arquivos de configuração carregados no repositório GitHub após conexão Data Factory
 
-* Data - Conjunto de dados do Spotify, obtido do Kaggle, uma plataforma vital na comunidade de dados, é uma fonte valiosa de informações para análise e exploração no campo da ciência de dados.
+* Databricks-pcm
+    - Arquivos de configuração da conexão do Databricks ao Data Factory
+
+* Pipeline
+    - Arquivos de configuração do pipeline
+
+* Trigger
+    - Arquivos de configuração do gatilho de execução
 
 ## 🎞️Imagens do Projeto
 
-###### Imagem 4: Monitorando execução do pipeline no Data Factory
-<img src="/img/img-grafico-dispersao.png">
+###### Imagem 5: Monitorando execução do pipeline no Data Factory
+<img src="/img/monitorando-execucao-pipeline.png">
 
-###### Imagem 4: Monitorando execução do pipeline no Databricks
-<img src="/img/img-api-spotify.png">
+###### Imagem 6: Monitorando execução do pipeline no Databricks / Job runs
+<img src="/img/monitorando-execucao-pipeline-databricks.png">
 
-###### Imagem 4: Notebook Databricks
-<img src="/img/img-databricks.png">
+###### Imagem 7: Tela inicial do estúdio do Azure Data Factory
+<img src="/img/estudio-azure-data-factory.png">
 
 ## 🔍Referências
 - [Alura](https://www.alura.com.br/)
