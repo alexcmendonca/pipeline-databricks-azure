@@ -71,7 +71,7 @@ Realizado testes essenciais para garantir a execução correta do pipeline e ide
 ###### Imagem 6: Monitorando execução do pipeline no Databricks / Job runs
 <img src="/img/monitorando-execucao-pipeline-databricks.png">
 
-###### Imagem 7: Tela inicial do estúdio do Azure Data Factory
+###### Imagem 7: Tela inicial do estúdio Azure Data Factory
 <img src="/img/estudio-azure-data-factory.png">
 
 ## 🔍Referências
